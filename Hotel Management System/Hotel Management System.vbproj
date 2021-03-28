@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0C4B003-FC43-41FC-9B3E-FEA05803E8E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Hotel_Management_System.My.MyApplication</StartupObject>
+    <RootNamespace>Hotel_Management_System</RootNamespace>
+    <AssemblyName>Hotel Management System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Hotel Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Hotel Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp.Pro, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.Pro.5.15.3\lib\net472\FontAwesome.Sharp.Pro.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addUser.Designer.vb">
+      <DependentUpon>addUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRoom.Designer.vb">
+      <DependentUpon>AddRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_new_employee.Designer.vb">
+      <DependentUpon>Add_new_employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add_new_employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminForm.Designer.vb">
+      <DependentUpon>adminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Useform.Designer.vb">
+      <DependentUpon>Useform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Useform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookings.Designer.vb">
+      <DependentUpon>bookings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bookings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cancel_booking.Designer.vb">
+      <DependentUpon>Cancel_booking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cancel_booking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checkout.Designer.vb">
+      <DependentUpon>Checkout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Checkout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="check_availability.Designer.vb">
+      <DependentUpon>check_availability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="check_availability.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="First.Designer.vb">
+      <DependentUpon>First.vb</DependentUpon>
+    </Compile>
+    <Compile Include="First.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Food and beverages.Designer.vb">
+      <DependentUpon>Food and beverages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Food and beverages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuestForm.Designer.vb">
+      <DependentUpon>GuestForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GuestForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Change_password.Designer.vb">
+      <DependentUpon>Change_password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Change_password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeUser.Designer.vb">
+      <DependentUpon>removeUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="removeUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeRoom.Designer.vb">
+      <DependentUpon>removeRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="removeRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remove_employees.Designer.vb">
+      <DependentUpon>Remove_employees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Remove_employees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_employees.Designer.vb">
+      <DependentUpon>search_employees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="search_employees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="addUser.resx">
+      <DependentUpon>addUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRoom.resx">
+      <DependentUpon>AddRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_new_employee.resx">
+      <DependentUpon>Add_new_employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminForm.resx">
+      <DependentUpon>adminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Useform.resx">
+      <DependentUpon>Useform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookings.resx">
+      <DependentUpon>bookings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cancel_booking.resx">
+      <DependentUpon>Cancel_booking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checkout.resx">
+      <DependentUpon>Checkout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="check_availability.resx">
+      <DependentUpon>check_availability.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="First.resx">
+      <DependentUpon>First.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food and beverages.resx">
+      <DependentUpon>Food and beverages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestForm.resx">
+      <DependentUpon>GuestForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_password.resx">
+      <DependentUpon>Change_password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removeUser.resx">
+      <DependentUpon>removeUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removeRoom.resx">
+      <DependentUpon>removeRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remove_employees.resx">
+      <DependentUpon>Remove_employees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_employees.resx">
+      <DependentUpon>search_employees.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
